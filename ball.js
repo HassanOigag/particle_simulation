@@ -1,31 +1,10 @@
-function rotate(xspeed, yspeed, angle) {
-    const rotatedVelocities = {
-        x: xspeed * Math.cos(angle) - yspeed * Math.sin(angle),
-        y: xspeed * Math.sin(angle) + yspeed * Math.cos(angle)
-    };
-
-    return rotatedVelocities;
-}
-
-function map(value, start, end, newStart, newEnd) {
-    return newStart + (newEnd - newStart) * ((value - start) / (end - start));
-}
-const line =  (x, y, x1, y1, opacity) =>
-{
-    this.opacity = opacity;
-    ctx.beginPath();
-    ctx.moveTo(x, y);
-    ctx.lineTo(x1, y1);
-    ctx.strokeStyle = "rgb(225,255,255,"+ this.opacity +")";
-    ctx.stroke();
-}
 
 class Ball{
-    constructor(radius)
+    constructor()
     {
-        this.x = getRandomIntInclusive(radius, canvas.width - radius);
-        this.y = getRandomIntInclusive(radius, canvas.height - radius);
-        this.radius = radius;
+        this.radius = 4;
+        this.x = getRandomIntInclusive(this.radius, canvas.width - this.radius);
+        this.y = getRandomIntInclusive(this.radius, canvas.height - this.radius);
         this.xspeed = getRandomIntInclusive(-1, 1);
         this.yspeed = getRandomIntInclusive(-1, 1);
         this.opacity = Math.random() + 0.1;

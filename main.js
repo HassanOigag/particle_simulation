@@ -1,10 +1,12 @@
 // const ball = new Ball(100,100, 4);
-const balls = []
-for (let index = 0; index < 20; index++) {
+// canvas.addEventListener("click", ()=>{
+//     let newBall = new Ball(mouse.x, mouse.y);
+//     balls.push(newBall);
+// });
 
-    balls.push(new Ball(4))
-}
-console.log(canvas);
+balls = [];
+for (let index = 0; index < ballsCount; index++)
+    balls.push(new Ball());
 
 function animate()
 {
@@ -15,13 +17,6 @@ function animate()
         ball.move();
         ball.hit(balls)
     });
-
-    // for (let index = 0; index < balls.length; index++) {
-    //     for (let index2 = 0; index2 < balls.length; index2++) {
-    //         if (index != index2 && balls[index].hit(balls[index2]))
-    //             balls[index].bounce(balls[index2]); 
-    //     }
-    // }
 }
 
 animate();
