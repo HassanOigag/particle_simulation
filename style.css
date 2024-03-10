@@ -1,5 +1,5 @@
 body{
-    background-color: #f4f4;
+    /* background-color: black; */
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -10,6 +10,7 @@ body{
 .myCanvas{
     border: 1px solid #000;
     margin: 5px;
+    background-color:  black;
     /* margin: auto auto; */
     /* display: block; */
 }
