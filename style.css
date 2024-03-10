@@ -1,0 +1,15 @@
+body{
+    background-color: #f4f4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.myCanvas{
+    border: 1px solid #000;
+    margin: 5px;
+    /* margin: auto auto; */
+    /* display: block; */
+}
